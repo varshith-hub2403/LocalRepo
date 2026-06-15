@@ -1,1 +1,79 @@
-<p>this is new repo</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym Membership Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🏋️ FitZone Gym</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Plans</a>
+            <a href="#">Trainers</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Transform Your Body, Transform Your Life</h1>
+        <p>Join FitZone Gym and start your fitness journey today.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Gym Membership Registration</h2>
+
+            <form id="membershipForm">
+
+                <input type="text" id="name" placeholder="Full Name">
+
+                <input type="email" id="email" placeholder="Email Address">
+
+                <input type="tel" id="phone" placeholder="Phone Number">
+
+                <select id="plan">
+                    <option value="">Select Membership Plan</option>
+                    <option>Monthly Plan</option>
+                    <option>Quarterly Plan</option>
+                    <option>Yearly Plan</option>
+                </select>
+
+                <textarea id="goal" placeholder="Fitness Goal"></textarea>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <h2>Workout Planner</h2>
+
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Add Workout Task">
+
+            <button onclick="addTask()">
+                Add Workout
+            </button>
+
+            <ul id="taskList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 FitZone Gym. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
